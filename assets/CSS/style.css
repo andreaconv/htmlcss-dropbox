@@ -22,11 +22,23 @@ h3{
   font-size: 1.8rem;
 }
 
+h4{
+  font-weight: 900;
+}
+
 
 
 /* UTILS */
 .d-flex{
   display: flex;
+}
+
+.s-between{
+  justify-content: space-between;
+}
+
+.f-start{
+  align-items: flex-start;
 }
 
 button{
@@ -59,7 +71,6 @@ header{
   left: 0;
   z-index: 999;
 
-  justify-content: space-between;
   height: 70px;
   width: 100%;
   background-color: white;
@@ -181,10 +192,24 @@ main .container{
   background-color: rgb(0, 26, 255);
 }
 
+main .title{
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-bottom: 1px solid lightgray;
+}
+
+/* DA VALUTARE SE DARE UNO SPAZIO FRA LE VARIE SECTION */
+/* main section{
+  margin-bottom: 40px;
+} */
+
+
 /* PRIMA SECTION #SUBSCRIPTION */
 
 main #subscription{
-  /* height: 800px; */
+  margin-bottom: 40px;
+  /* DEBUG */
   background-color: white;
 }
 
@@ -192,13 +217,8 @@ main #subscription .billing{
   margin: 3rem 0 2rem;
 }
 
-main #subscription .row{
-  justify-content: space-between;
-}
-
 main #subscription .row .column{
   width: 30%;
-  background-color: white;
   border: 1px solid #ededee;
 }
 
@@ -206,12 +226,6 @@ main i{
   margin-right: 5px;
 }
 
-main #subscription .row .column .title{
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  border-bottom: 1px solid lightgray;
-}
 
 /* ELEMENTI COLONNA */
 
@@ -219,59 +233,73 @@ main .content{
   padding: 30px;
 }
 
-main .content *{
+main #subscription .content *{
   margin-bottom: 10px;
 }
 
-main .content .price{
+main #subscription .content .price{
   font-weight: 900;
 }
 
-main .content .duration{
+main #subscription .content .duration{
   color: #667683;
   margin-bottom: 40px;
 }
 
-main .content button{
+main #subscription .content button{
   margin: 30px 0 20px;
 }
 
-main .content span+a{
+main #subscription .content span+a{
   text-decoration: underline;
 }
 
-main .content .line{
+main #subscription .content .line{
   height: 1rem;
   margin: 1rem 0;
   width: 50px;
   border-bottom: 1px solid lightgray;
 }
 
-main .content h4{
-  margin-top: 2rem;
+main #subscription .content h4{
+  margin: 2rem 0 1.5rem;
 }
 
-main .content ul i{
+main #subscription .content ul i{
   color: #0061ff;
 }
 
-main .content li:last-child{
+main #subscription .content li:last-child{
   margin-bottom: 8rem;
 }
 
+/* FINE PRIMA SECTION */
 
 
 
-
-
-
-
+/* INIZO SECTION SUBSCRIPRION BOTTOM */
 
 
 main section.subscription-bottom{
-  height: 200px;
-  background-color: rgb(1, 82, 1);
+  background-color: white;
+  border: 1px solid #ededee;
 }
+
+main section.subscription-bottom h4{
+  margin: 2rem 0;
+}
+
+main section.subscription-bottom button{
+  padding: 10px 80px;
+}
+
+
+/* FINE SECTION SUBSCRIPRION BOTTOM */
+
+
+
+
+
 
 main section.partner{
   height: 600px;
