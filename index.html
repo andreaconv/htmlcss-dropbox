@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assets/CSS/style.css">
   <title>Document</title>
 </head>
@@ -14,7 +16,9 @@
     <div class="menu-sx d-flex">
 
       <div class="image">
-        <img src="assets/IMG/logo-small.png" alt="logo">
+        <a href="#">
+          <img src="assets/IMG/logo-small.png" alt="logo">
+        </a>
       </div>
 
       <nav>
@@ -37,7 +41,7 @@
         </ul>
       </nav>
       
-      <button>Inizia</button>
+      <button class="start"><a href="#">Inizia</a></button>
 
     </div>
 
@@ -49,7 +53,24 @@
     <!-- suppongo che l'img spacchi il contenitore perché si trova in position absolute -->
 
     <div class="container-big">
-      <h1>Tutto ciò che ti serve il lavoro in un unico posto Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, temporibus maiores, quasi esse inventore sint architecto deleniti debitis amet consequatur odio velit officia quam possimus quos dolorem magnam fugit iste.</h1>
+
+      <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
+
+      <div class="free-trial">
+        <p>
+          Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.
+        </p>
+
+        <button><a href="#">Inizia la tua prova gratuita</a></button>
+        
+        <div>Annulla in qualsiasi momento</div>
+
+        <a href="#subscription">
+          <i class="fa-solid fa-arrow-down"></i>
+        </a>
+
+      </div>
+
     </div>
 
   </div>
@@ -59,7 +80,7 @@
 
     <div class="container">
 
-      <section class="subscription">
+      <section id="subscription">
         <h1>trova il piano Dropbox Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem iste ducimus, commodi rerum culpa nobis veniam, aspernatur animi non quaerat similique ea eligendi quo tempore adipisci consequatur repellat, porro mollitia!</h1>
       </section>
 

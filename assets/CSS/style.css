@@ -8,9 +8,27 @@ body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h1{
+  font-size: 4rem;
+}
+
 /* UTILS */
 .d-flex{
   display: flex;
+}
+
+button{
+  background-color: #0061ff;
+  border: none;
+  padding: 7px 20px;
+}
+
+button a{
+  color: white;
+}
+
+a{
+  text-decoration: none;
 }
 
 
@@ -45,7 +63,6 @@ header nav ul li a{
   color: black;
 }
 
-
 header .menu-sx{
   align-items: center;
   width: 50%;
@@ -60,7 +77,6 @@ header .menu-sx .image img{
   height: 100%;
 }
 
-
 header .menu-dx{
   justify-content: end;
   align-items: center;
@@ -69,11 +85,6 @@ header .menu-dx{
 
 header .menu-dx button{
   margin: 0 20px;
-  padding: 7px 20px;
-  color: white;
-  background-color: #0061ff;
-  border: none;
-  cursor: pointer;
 }
 
 
@@ -84,14 +95,65 @@ header .menu-dx button{
   width: 100%;
   height: 700px;
   background-color: #b4d0e7;
-
   margin-bottom: 50px;
 }
 
 .jumbotron .container-big{
   width: 80%;
   margin: 0 auto;
+  /* debug */
+  background-color: rgb(83, 156, 180);
 }
+
+
+
+
+
+.jumbotron .container-big h1{
+  margin-bottom: 50px;
+  /* degug */
+  background-color: rgb(6, 243, 6);
+}
+
+.jumbotron .container-big .free-trial{
+  width: 35%;
+  padding-right: 10px;
+  /* debug */
+  background-color: rgb(3, 172, 3);
+}
+
+.jumbotron .container-big .free-trial p{
+  line-height: 1.3rem;
+  margin-bottom: 20px;
+  /* debug */
+  background-color: red;
+}
+
+.jumbotron .container-big .free-trial button{
+  padding: 10px 20px;
+  font-size: 1.1rem;
+}
+
+.jumbotron .container-big .free-trial div{
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+
+.jumbotron .container-big .free-trial i{
+  font-size: 2.5rem;
+  margin-top: 20px;
+  color: black;
+}
+
+
+/* per evitare che le ancore finiscano ditro il menu fixed */
+
+/* #subscription::before{
+  content: '';
+  display: block;
+  height: 70px;
+  margin: -70px 0 0 ;
+} */
 
 
 /* MAIN */
@@ -106,7 +168,7 @@ main .container{
   background-color: rgb(0, 26, 255);
 }
 
-main section.subscription{
+main #subscription{
   height: 800px;
   background-color: rgb(25, 182, 19);
 }
