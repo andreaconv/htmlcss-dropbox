@@ -182,6 +182,25 @@ main #subscription{
   background-color: rgb(25, 182, 19);
 }
 
+main #subscription .row{
+  justify-content: space-between;
+}
+
+main #subscription .row .column{
+  width: 30%;
+  height: 200px;
+  background-color: red;
+  border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
 
 
 main section.subscription-bottom{
