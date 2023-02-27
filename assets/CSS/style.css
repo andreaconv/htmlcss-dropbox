@@ -1,8 +1,54 @@
+/* GENERAL */
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body{
-  font-family: ;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* UTILS */
+
+
+
+
+/* HEADER */
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  /* DEBUG */
+  background-color: greenyellow;
+}
+
+header .menu-sx{
+  height: 70px;
+  width: 40%;
+  background-color: red;
+}
+header .menu-dx{
+  height: 70px;
+  width: 40%;
+  background-color: blue;
+}
+
+
+/* JUMBO */
+
+
+
+/* MAIN */
+main{
+  /* dare un margin top alto quanto l'altezza dell'header */
+  margin-top: 80px;
+  width: 100%;
+  background-color: blueviolet;
 }
