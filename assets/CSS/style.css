@@ -101,49 +101,51 @@ header .menu-dx button{
 .jumbotron .container-big{
   width: 80%;
   margin: 0 auto;
-  /* debug */
-  background-color: rgb(83, 156, 180);
 }
-
-
-
-
 
 .jumbotron .container-big h1{
   margin-bottom: 50px;
-  /* degug */
-  background-color: rgb(6, 243, 6);
 }
 
-.jumbotron .container-big .free-trial{
+.jumbotron .container-big .text{
   width: 35%;
   padding-right: 10px;
-  /* debug */
-  background-color: rgb(3, 172, 3);
 }
 
-.jumbotron .container-big .free-trial p{
+.jumbotron .container-big .text p{
   line-height: 1.3rem;
   margin-bottom: 20px;
-  /* debug */
-  background-color: red;
 }
 
-.jumbotron .container-big .free-trial button{
+.jumbotron .container-big .text button{
   padding: 10px 20px;
   font-size: 1.1rem;
 }
 
-.jumbotron .container-big .free-trial div{
+.jumbotron .container-big .text div{
   font-size: 0.8rem;
   margin: 1rem 0;
 }
 
-.jumbotron .container-big .free-trial i{
+.jumbotron .container-big .text i{
   font-size: 2.5rem;
   margin-top: 20px;
   color: black;
 }
+
+.jumbotron .container-big .image{
+  width: 400px;
+  height: 300px;
+}
+
+.jumbotron .container-big .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
 
 
 /* per evitare che le ancore finiscano ditro il menu fixed */
@@ -193,7 +195,7 @@ main section.sponsor{
   background-color: darkgoldenrod;
 }
 
-main section.free-trial{
+main section.text{
   height: 300px;
   background-color: #b4d0e7;
 }
