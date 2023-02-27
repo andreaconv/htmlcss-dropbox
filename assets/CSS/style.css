@@ -15,7 +15,7 @@ h1{
 }
 
 h2{
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h3{
@@ -63,10 +63,10 @@ ul{
 
 /* HEADER */
 
-/* aggiungere l'img DROPBOX e il bottone in un "a" e modificare con un cursor pointer e la riga sotto on hover */
+/* modificare la riga sotto a li on hover perchè mi sposta tutta la NAV */
 
 header{
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
@@ -78,7 +78,13 @@ header{
 
 header nav ul li{
   display: inline-block;
+  line-height: 70px;
   padding: 0 20px;
+  height: 100%;
+}
+
+header nav ul li:hover{
+  border-bottom: 3px solid black;
 }
 
 header nav ul li a{
