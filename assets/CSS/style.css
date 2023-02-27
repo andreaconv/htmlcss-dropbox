@@ -9,35 +9,71 @@ body{
 }
 
 /* UTILS */
-
+.d-flex{
+  display: flex;
+}
 
 
 
 /* HEADER */
 
+/* aggiungere l'img DROPBOX e il bottone in un "a" e modificare con un cursor pointer e la riga sotto on hover */
+
 header{
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
 
-  display: flex;
   justify-content: space-between;
   height: 70px;
   width: 100%;
-  /* DEBUG */
-  background-color: greenyellow;
+  background-color: white;
 }
 
-header .menu-sx{
-  height: 70px;
-  width: 40%;
-  background-color: red;
+header nav ul{
+  list-style: none;
 }
+
+header nav ul li{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+
+header .menu-sx{
+  align-items: center;
+  width: 50%;
+}
+
+header .menu-sx .image{
+  height: 40%;
+  margin: 0 20px;
+}
+
+header .menu-sx .image img{
+  height: 100%;
+}
+
+
 header .menu-dx{
-  height: 70px;
-  width: 40%;
-  background-color: blue;
+  justify-content: end;
+  align-items: center;
+  width: 50%;
+}
+
+header .menu-dx button{
+  margin: 0 20px;
+  padding: 7px 20px;
+  color: white;
+  background-color: #0061ff;
+  border: none;
+  cursor: pointer;
 }
 
 
