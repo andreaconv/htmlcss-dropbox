@@ -62,8 +62,11 @@ button{
   padding: 7px 20px;
 }
 
-a{
+button a{
   color: white;
+}
+
+a{
   text-decoration: none;
 }
 
@@ -77,7 +80,7 @@ ul{
 /* modificare la riga sotto a li on hover perchè mi sposta tutta la NAV */
 
 header{
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
@@ -207,9 +210,32 @@ main #subscription{
   margin-bottom: 40px;
 }
 
+/* FATTURAZIONE */
+
 main #subscription .billing{
   margin: 3rem 0 2rem;
 }
+
+main #subscription .billing .circle{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+main #subscription .billing .circle.blue{
+  border: 5px solid #0061ff;
+}
+
+main #subscription .billing .circle.empty{
+  border: 1px solid gray;
+}
+
+main #subscription .billing span{
+  margin-right: 20px;
+}
+
+/* COLONNE */
 
 main #subscription .row .column{
   width: 30%;
@@ -285,7 +311,7 @@ main section.subscription-bottom{
 }
 
 main section.subscription-bottom h4{
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 main section.subscription-bottom button{
@@ -299,7 +325,7 @@ main section.subscription-bottom button{
 
 
 main section.partner{
-  /* height: 600px; */
+  margin: 100px 0;
 }
 
 main section.partner .image{
@@ -432,7 +458,7 @@ section.free-trial .container button a{
 
 section.questions{
   /* height: 300px; */
-  margin: 70px 0;
+  margin: 100px 0 ;
 }
 
 section.questions .row{
@@ -480,6 +506,10 @@ footer .column li{
   margin-bottom: 1rem;
 }
 
+footer .column a{
+  color: white;
+}
+
 footer .line{
   width: 120px;
   height: 1rem;
@@ -490,3 +520,5 @@ footer .line{
 footer .language{
   color: gray;
 }
+
+/* FINE FOOTER */
