@@ -9,6 +9,16 @@ body{
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
+.container{
+  width: 70%;
+  margin: 0 auto;
+  background-color: rgb(0, 26, 255);
+}
+
+section{
+  margin-bottom: 40px;
+}
+
 h1{
   font-size: 5rem;
   font-weight: 900;
@@ -122,8 +132,8 @@ header .menu-dx button{
   margin: 0 20px;
 }
 
-
 /* JUMBO */
+
 .jumbotron{
   /* dare un margin top alto quanto l'altezza dell'header */
   margin-top: 70px;
@@ -169,7 +179,8 @@ header .menu-dx button{
 }
 
 .jumbotron .container-big .image{
-  height: 450px;
+  /* height: 450px; */
+  width: 67%;
 }
 
 .jumbotron .container-big .image img{
@@ -195,21 +206,11 @@ main{
   background-color: blueviolet;
 }
 
-main .container{
-  width: 70%;
-  margin: 0 auto;
-  background-color: rgb(0, 26, 255);
-}
-
 main .title{
   justify-content: center;
   align-items: center;
   height: 40px;
   border-bottom: 1px solid lightgray;
-}
-
-main section{
-  margin-bottom: 40px;
 }
 
 /* PRIMA SECTION #SUBSCRIPTION */
@@ -348,7 +349,7 @@ main section.partner .text button a{
 
 main section.business{
   /* height: 1500px; */
-  background-color: brown;
+  /* background-color: brown; */
 }
 
 main section.business .row{
@@ -358,7 +359,7 @@ main section.business .row{
 main section.business .card{
   width: calc(100/3);
   /* debug */
-  background-color: yellowgreen;
+  background-color: white;
   border: 1px solid black;
 }
 
@@ -384,31 +385,47 @@ main section.business .card p span{
   border-bottom: 1px solid gray;
 }
 
+/* FINE SECTION BUSINESS*/
 
+/* INIZIO SECTION SPONSOR-TOP */
 
-
-
-
-
-
-
-
-
-
-
-
-main section.sponsor{
-  height: 400px;
+main section.sponsor-top{
+  /* height: 400px; */
   background-color: darkgoldenrod;
 }
 
-main section.text{
+main section.sponsor-top a{
+  text-decoration: underline;
+}
+
+/* FINE MAIN  */
+
+/* INIZIO SECTION SPONSOR-SQUARE */
+
+section.sponsor-all{
+  width: 100vw;
+  height: 400px;
+  background-color: brown;
+}
+
+section.sponsor-all div{
+  width: calc(100 / 3);
+  /* height: 200px; */
+  background-color: green;
+  border: 1px solid black;
+}
+
+
+/* FINE SECTION SPONSOR-SQUARE */
+
+
+.container section.free-trial{
   height: 300px;
   background-color: #b4d0e7;
 }
 
-main section.questions{
-  height: 600px;
+.container section.questions{
+  height: 300px;
   background-color: coral;
 }
 
