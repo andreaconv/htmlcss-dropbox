@@ -55,7 +55,6 @@ h4{
 }
 
 
-
 button{
   background-color: #0061ff;
   border: none;
@@ -93,7 +92,7 @@ header{
 header nav ul li{
   display: inline-block;
   line-height: 70px;
-  padding: 0 20px;
+  padding: 0 10px;
   height: 100%;
 }
 
@@ -108,7 +107,6 @@ header nav ul li a{
 
 header .menu-sx{
   align-items: center;
-  width: 50%;
 }
 
 header .menu-sx .image{
@@ -123,7 +121,6 @@ header .menu-sx .image img{
 header .menu-dx{
   justify-content: end;
   align-items: center;
-  width: 50%;
 }
 
 header .menu-dx button{
@@ -133,12 +130,17 @@ header .menu-dx button{
 /* JUMBO */
 
 .jumbotron{
+  /* position: relative; */
   /* dare un margin top alto quanto l'altezza dell'header */
   margin-top: 70px;
   width: 100%;
   height: 600px;
   background-color: #b4d0e7;
   margin-bottom: 200px;
+}
+
+.jumbotron .container-big{
+  /* position: absolute; */
 }
 
 .jumbotron .container-big h1{
@@ -172,13 +174,12 @@ header .menu-dx button{
 }
 
 .jumbotron .container-big .image{
-  /* height: 450px; */
   width: 67%;
 }
 
 .jumbotron .container-big .image img{
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   object-fit: cover;
 }
 
@@ -343,8 +344,6 @@ main section.partner .text{
   width: 50%;
   padding-top: 50px;
   padding-left: 50px;
-  /* debug */
-  background-color: white;
 }
 
 main section.partner .text p{
@@ -383,7 +382,7 @@ main section.business .card .image{
 }
 
 main section.business .card .image img{
-    width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -405,7 +404,7 @@ main section.business .card p span{
 /* INIZIO SECTION SPONSOR-TOP */
 
 main section.sponsor-top{
-  width: 50%;
+  /* width: 50%; */
 }
 
 main section.sponsor-top a{
@@ -417,17 +416,51 @@ main section.sponsor-top a{
 /* INIZIO SECTION SPONSOR-SQUARE */
 
 section.sponsor-all{
-  width: 100vw;
-  height: 400px;
+  /* debug */
+  /* width: 100vw; */
+  height: 30vw;
+}
+
+section.sponsor-all .square{
+  flex-wrap: wrap;
+  width: 30vw;
+  /* debug */
   background-color: brown;
 }
 
-section.sponsor-all div{
-  width: calc(100 / 3);
-  /* height: 200px; */
-  background-color: green;
-  border: 1px solid black;
+section.sponsor-all .square .item{
+  align-items: center;
+  width: 15vw;
+  padding: 3vw;
 }
+
+section.sponsor-all img{
+  width: 100%;
+  object-fit: cover;
+  filter: invert();
+}
+
+section.sponsor-all .contain.center{
+  width: 40vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* FINE SECTION SPONSOR-SQUARE */
 
 
