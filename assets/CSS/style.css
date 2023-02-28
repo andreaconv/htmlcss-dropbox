@@ -416,50 +416,53 @@ main section.sponsor-top a{
 /* INIZIO SECTION SPONSOR-SQUARE */
 
 section.sponsor-all{
-  /* debug */
-  /* width: 100vw; */
   height: 30vw;
-}
-
-section.sponsor-all .square{
-  flex-wrap: wrap;
-  width: 30vw;
-  /* debug */
-  background-color: brown;
-}
-
-section.sponsor-all .square .item{
-  align-items: center;
-  width: 15vw;
-  padding: 3vw;
+  /* width: 100%; */
 }
 
 section.sponsor-all img{
   width: 100%;
   object-fit: cover;
+}
+
+/* QUADRATI LATERALI */
+
+section.sponsor-all .square{
+  flex-wrap: wrap;
+  min-width: 30vw;
+}
+
+section.sponsor-all .square .item{
+  align-items: center;
+  width: 15vw;
+  height: 15vw;
+  padding: 3vw;
+}
+section.sponsor-all .square .item.active{
+  border: 10px solid #d1e9cd;
+}
+
+section.sponsor-all .square img{
   filter: invert();
 }
 
-section.sponsor-all .contain.center{
-  width: 40vw;
+/* SEZIONE CENTRALE */
+
+section.sponsor-all .contain{
+  overflow-y: auto;
+  padding: 30px;
 }
 
+section.sponsor-all .contain .image{
+  width: 10vw;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+section.sponsor-all .contain .line{
+  width: 5vw;
+  height: 1rem;
+  margin: 40px 0;
+  border-bottom: 1px solid lightgray;
+}
 
 /* FINE SECTION SPONSOR-SQUARE */
 
