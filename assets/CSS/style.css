@@ -12,11 +12,6 @@ body{
 .container{
   width: 70%;
   margin: 0 auto;
-  background-color: rgb(0, 26, 255);
-}
-
-section{
-  margin-bottom: 40px;
 }
 
 h1{
@@ -25,7 +20,6 @@ h1{
 }
 h2{
   font-size: 2.7rem;
-  margin: 50px 0;
 }
 h3{
   font-size: 1.8rem;
@@ -202,23 +196,19 @@ header .menu-dx button{
 } */
 
 
-main{
-  background-color: blueviolet;
+main section{
+  margin-bottom: 40px;
 }
 
-main .title{
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  border-bottom: 1px solid lightgray;
+main h2{
+  margin: 50px 0;
 }
+
 
 /* PRIMA SECTION #SUBSCRIPTION */
 
 main #subscription{
   margin-bottom: 40px;
-  /* DEBUG */
-  background-color: white;
 }
 
 main #subscription .billing{
@@ -227,7 +217,14 @@ main #subscription .billing{
 
 main #subscription .row .column{
   width: 30%;
-  border: 1px solid #ededee;
+  border: 1px solid lightgray;
+}
+
+main .title{
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-bottom: 1px solid lightgray;
 }
 
 main i{
@@ -288,8 +285,7 @@ main #subscription .content li:last-child{
 
 
 main section.subscription-bottom{
-  background-color: white;
-  border: 1px solid #ededee;
+  border: 1px solid lightgray;
 }
 
 main section.subscription-bottom h4{
@@ -357,10 +353,7 @@ main section.business .row{
 }
 
 main section.business .card{
-  width: calc(100/3);
-  /* debug */
-  background-color: white;
-  border: 1px solid black;
+  width: 30%;
 }
 
 main section.business .card .image{
@@ -390,8 +383,7 @@ main section.business .card p span{
 /* INIZIO SECTION SPONSOR-TOP */
 
 main section.sponsor-top{
-  /* height: 400px; */
-  background-color: darkgoldenrod;
+  width: 50%;
 }
 
 main section.sponsor-top a{
@@ -414,15 +406,46 @@ section.sponsor-all div{
   background-color: green;
   border: 1px solid black;
 }
-
-
 /* FINE SECTION SPONSOR-SQUARE */
 
 
-.container section.free-trial{
-  height: 300px;
+/* INIZIO SECTION FREE-TRIAL*/
+
+section.free-trial{
+  padding: 100px 0;
   background-color: #b4d0e7;
 }
+
+section.free-trial .container h2{
+  width: 50%;
+  color: #61082b;
+}
+
+section.free-trial .container button{
+  background-color: white;
+  padding: 10px 80px;
+}
+section.free-trial .container button a{
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .container section.questions{
   height: 300px;
