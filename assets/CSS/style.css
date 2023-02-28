@@ -429,28 +429,42 @@ section.free-trial .container button a{
   color: black;
 }
 
+/* FINE SECTION FREE-TRIAL*/
 
 
+/* INIZIO SECTION QUESTION */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.container section.questions{
-  height: 300px;
-  background-color: coral;
+section.questions{
+  /* height: 300px; */
+  margin: 70px 0;
 }
+
+section.questions .row{
+  padding: 30px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+section.questions h3{
+  font-weight: 900;
+}
+
+section.questions span{
+  font-weight: 900;
+}
+
+section.questions i{
+  margin-right: 30px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 
