@@ -6,11 +6,15 @@
 }
 body{
   font-family: 'Lato', sans-serif;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 .container{
   width: 70%;
+  margin: 0 auto;
+}
+
+.container-big{
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -58,11 +62,8 @@ button{
   padding: 7px 20px;
 }
 
-button a{
-  color: white;
-}
-
 a{
+  color: white;
   text-decoration: none;
 }
 
@@ -135,11 +136,6 @@ header .menu-dx button{
   height: 600px;
   background-color: #b4d0e7;
   margin-bottom: 200px;
-}
-
-.jumbotron .container-big{
-  width: 80%;
-  margin: 0 auto;
 }
 
 .jumbotron .container-big h1{
@@ -456,19 +452,41 @@ section.questions i{
   margin-right: 30px;
 }
 
-
-
-
-
-
-
-
-
+/* FINE SECTION QUESTION */
 
 
 /* FOOTER */
 
 footer{
-  height: 600px;
+  padding: 100px 0 60px;
+  color: white;
   background-color: black;
+}
+
+footer nav{
+  margin-bottom: 100px;
+}
+
+footer .column{
+  width: calc(100 / 5);
+}
+
+footer .column h4{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+footer .column li{
+  margin-bottom: 1rem;
+}
+
+footer .line{
+  width: 120px;
+  height: 1rem;
+  margin-bottom: 40px;
+  border-bottom: 1px solid lightgray;
+}
+
+footer .language{
+  color: gray;
 }
