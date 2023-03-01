@@ -19,8 +19,7 @@ body{
 }
 
 h1{
-  font-size: 5rem;
-  font-weight: 900;
+  font-size: 5rem;/
 }
 h2{
   font-size: 2.7rem;
@@ -46,10 +45,29 @@ h4{
   align-items: flex-start;
 }
 
+.align-i-center{
+  align-items: center;
+}
+
 .bb-l-gray{
   border-bottom: 1px solid lightgray;
 }
 
+.image.cover img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.font-w-900{
+  font-weight: 900;
+}
+
+ul{
+  list-style: none;
+}
+
+/* BUTTON */
 
 button{
   background-color: #0061ff;
@@ -69,10 +87,6 @@ a{
   text-decoration: none;
 }
 
-ul{
-  list-style: none;
-}
-
 
 /* HEADER */
 
@@ -86,26 +100,7 @@ header{
 
   height: 70px;
   width: 100%;
-}
-
-header nav ul li{
-  display: inline-block;
-  line-height: 70px;
-  padding: 0 10px;
-  height: 100%;
-}
-
-header nav ul li:hover{
-  border-bottom: 3px solid black;
-}
-
-header nav ul li a{
-  text-decoration: none;
-  color: black;
-}
-
-header .menu-sx{
-  align-items: center;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header .menu-sx .image{
@@ -117,9 +112,54 @@ header .menu-sx .image img{
   height: 100%;
 }
 
+header nav ul li{
+  display: inline-block;
+  line-height: 70px;
+  /* IL "line-height" MI SERVE PER IL "border-bottom" */
+  padding: 0 10px;
+}
+
+/* TROVARE UN MODO PER SELEZIONARE SOLO GLI "li" DELLA PRIMA LISTA */
+
+header nav ul li:hover{
+  /* border-bottom: 3px solid black; */
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+/* PROVA MENU TENDINA */
+
+/* 
+header nav ul li.dropdown{
+  position: relative;
+  overflow: hidden;
+}
+
+header nav ul li.dropdown:hover{
+  overflow: visible;
+}
+
+header nav ul.dropdown-menu{
+  position: absolute;
+  top: 70px;
+  left: 0;
+  padding: 10px 10px;
+}
+
+header nav ul.dropdown-menu li{
+  display: block;
+  width: 200px;
+  line-height: 2.4rem;
+} */
+
+/* FINE PROVA MENU TENDINA */
+
+
 header .menu-dx{
   justify-content: end;
-  align-items: center;
 }
 
 header .menu-dx button{
@@ -176,11 +216,6 @@ header .menu-dx button{
   width: 67%;
 }
 
-.jumbotron .container-big .image img{
-  width: 100%;
-  /* height: 100%; */
-  object-fit: cover;
-}
 
 /* MAIN */
 
@@ -203,12 +238,13 @@ main h2{
   margin: 50px 0;
 }
 
+main i{
+  margin-right: 5px;
+}
+
 
 /* PRIMA SECTION #SUBSCRIPTION */
 
-main #subscription{
-  margin-bottom: 40px;
-}
 
 /* FATTURAZIONE */
 
@@ -246,10 +282,7 @@ main .title{
   justify-content: center;
   align-items: center;
   height: 40px;
-}
-
-main i{
-  margin-right: 5px;
+  border-bottom: 1px solid lightgray;
 }
 
 /* ELEMENTI COLONNA */
@@ -331,17 +364,13 @@ main section.partner .image{
   height: 70%;
 }
 
-main section.partner .image img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 main section.partner .text{
   width: 50%;
   padding-top: 50px;
   padding-left: 50px;
+  /* background-color: red; */
 }
+/* PERCHè IL DIV TEXT è ALTO QUANTO L'IMMAGINE? */
 
 main section.partner .text p{
   line-height: 30px;
@@ -354,16 +383,11 @@ main section.partner .text button{
 main section.partner .text button a{
   color: black;
 }
-/* PERCHè IL DIV TEXT è ALTO QUANTO L'IMMAGINE? */
 /* FINE SECTION PARTNER */
 
 
 /* INIZIO SECTION BUSINESS*/
 
-main section.business{
-  /* height: 1500px; */
-  /* background-color: brown; */
-}
 
 main section.business .row{
   margin-bottom: 100px;
@@ -400,7 +424,6 @@ main section.business .card p span{
 /* INIZIO SECTION SPONSOR-TOP */
 
 main section.sponsor-top{
-  /* width: 50%; */
 }
 
 main section.sponsor-top a{
@@ -413,7 +436,6 @@ main section.sponsor-top a{
 
 section.sponsor-all{
   height: 30vw;
-  /* width: 100%; */
 }
 
 section.sponsor-all img{
@@ -487,21 +509,33 @@ section.free-trial .container button a{
 /* INIZIO SECTION QUESTION */
 
 section.questions{
-  /* height: 300px; */
   margin: 100px 0 ;
 }
 
 section.questions .row{
+  position: relative;
   padding: 30px 0;
   border-bottom: 1px solid lightgray;
 }
 
-section.questions h3{
-  font-weight: 900;
+section.questions .row p{
+  position: absolute;
+  top: 80px;
+  width: 80%;
+  color: #667683;
 }
 
-section.questions span{
-  font-weight: 900;
+section.questions .row.d-flex{
+  overflow: hidden;
+  /* transition: 1s ease-out ; */
+}
+
+section.questions .row.d-flex:hover{
+  height: 150px;
+}
+
+section.questions .row:hover i.fa-angle-down{
+  /* display: none; */
 }
 
 section.questions i{
