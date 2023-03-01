@@ -12,13 +12,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/CSS/style.css">
   <link rel="stylesheet" href="assets/CSS/color.css">
-  <title>Document</title>
+  <title>Dropbox</title>
 </head>
+
 <body>
   
-  <header class="white bb-l-gray d-flex s-between">
+  <header class="white d-flex s-between">
 
-    <div class="menu-sx d-flex">
+    <div class="menu-sx d-flex align-i-center">
 
       <div class="image">
         <a href="#">
@@ -36,11 +37,17 @@
 
     </div>
 
-    <div class="menu-dx d-flex">
+    <div class="menu-dx d-flex align-i-center">
 
       <nav>
         <ul>
-          <li><a href="#">Supporto</a></li>
+          <li class="dropdown">
+            <a href="#">Supporto</a>
+            <!-- <ul class="dropdown-menu white">
+              <li><a href="#">Centro assistenza</a></li>
+              <li><a href="#">Forum della community</a></li>
+            </ul> -->
+          </li>
           <li><a href="#">Contatta l'ufficio vendite</a></li>
           <li><a href="#">Accedi</a></li>
         </ul>
@@ -57,7 +64,7 @@
 
     <div class="container-big">
 
-      <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
+      <h1 class="font-w-900">Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
       
       <div class="jumbo d-flex">
 
@@ -78,7 +85,7 @@
   
         </div>
         
-        <div class="image">
+        <div class="image cover">
           <img src="assets/IMG/jumbo.png" alt="">
         </div>
 
@@ -99,6 +106,7 @@
 
         <div class="billing d-flex">
           <div class="circle blue"></div>
+          <!-- NON CAPISCO PERCHè L'INTERNO DEL CERCHIO è NERO -->
           <span>Fatturazione mensile</span>
           <div class="circle empty"></div>
           <span>Fatturazione annuale</span>
@@ -108,7 +116,7 @@
 
           <div class="column">
 
-            <div class="title bb-l-gray d-flex"><i class="fa-regular fa-user"></i> Singolo</div>
+            <div class="title d-flex"><i class="fa-regular fa-user"></i> Singolo</div>
             
             <div class="content">
 
@@ -128,7 +136,7 @@
                 <li><i class="fa-solid fa-check"></i>Invia file fino a 100 GB con Dropbox Trasfert</li>
                 <li><i class="fa-solid fa-check"></i>Cartelle offline su dispositivi mobili</li>
                 <li><i class="fa-solid fa-check"></i>Pulizia remota dell'account</li>
-                <li><i class="fa-solid fa-check"></i>Filigrana documento</li>
+                <li><i class="fa-solid fa-check"></i>Filigrana Dropbox</li>
                 <li><i class="fa-solid fa-check"></i>Assistenza prioritaria via emial e chat</li>
               </ul>
               
@@ -139,7 +147,7 @@
 
           <div class="column">
 
-            <div class="title bb-l-gray d-flex"><i class="fa-solid fa-building"></i> Team</div>
+            <div class="title d-flex"><i class="fa-solid fa-building"></i> Team</div>
             
             <div class="content">
 
@@ -171,7 +179,7 @@
 
           <div class="column">
 
-            <div class="title bb-l-gray d-flex"><i class="fa-regular fa-building"></i> Team</div>
+            <div class="title d-flex"><i class="fa-regular fa-building"></i> Team</div>
             
             <div class="content">
 
@@ -202,7 +210,7 @@
 
       <section class="subscription-bottom">
 
-        <div class="title bb-l-gray d-flex"><i class="fa-regular fa-building"></i> Team</div>
+        <div class="title d-flex"><i class="fa-regular fa-building"></i> Team</div>
 
         <div class="content d-flex f-start s-between">
           
@@ -221,7 +229,7 @@
 
       <section class="partner d-flex">
 
-        <div class="image">
+        <div class="image cover">
           <img src="assets/IMG/partner.png" alt="">
         </div>
 
@@ -425,34 +433,48 @@
       </div>
 
     </section>
-
     
+    <!-- SOSTITUIRE L'ICONA DELLE DOMANDE IN :HOVER -->
+        <!-- <i class="fa-solid fa-angle-up"></i> -->
+
     <section class="questions">
 
       <div class="container">
 
         <div class="row">
-          <h3>Domande frequenti</h3>
+          <h3 class="font-w-900">Domande frequenti</h3>
         </div>
 
         <div class="row d-flex s-between">
-          <span>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</span>
+          <span class="font-w-900">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</span>
           <i class="fa-solid fa-angle-down"></i>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est nostrum aperiam deserunt voluptatum dolor, repellat, earum beatae amet, cum nobis ducimus quibusdam inventore modi illum libero tempora sed iure fuga.
+          </p>
         </div>
 
         <div class="row d-flex s-between">
-          <span>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</span>
+          <span class="font-w-900">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</span>
           <i class="fa-solid fa-angle-down"></i>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt veniam, eius, laborum deleniti soluta ratione minima aperiam et reprehenderit maiores debitis ex quisquam. Ipsum voluptas illum nihil nemo, ex vero!
+          </p>
         </div>        
         
         <div class="row d-flex s-between">
-          <span>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</span>
+          <span class="font-w-900">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</span>
           <i class="fa-solid fa-angle-down"></i>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt veniam, eius, laborum deleniti soluta ratione minima aperiam et reprehenderit maiores debitis ex quisquam. Ipsum voluptas illum nihil nemo, ex vero!
+          </p>
         </div>        
 
         <div class="row d-flex s-between">
-          <span>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</span>
+          <span class="font-w-900">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</span>
           <i class="fa-solid fa-angle-down"></i>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt veniam, eius, laborum deleniti soluta ratione minima aperiam et reprehenderit maiores debitis ex quisquam. Ipsum voluptas illum nihil nemo, ex vero!
+          </p>
         </div>
 
       </div>
